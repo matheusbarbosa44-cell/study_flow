@@ -1,0 +1,25 @@
+STUDYFLOW - COMO ABRIR E EDITAR NO VS CODE
+
+1. Extraia o arquivo StudyFlow_VSCode.zip.
+2. Abra o Visual Studio Code.
+3. Clique em File (Arquivo) > Open Folder (Abrir Pasta).
+4. Escolha a pasta StudyFlow_VSCode que você extraiu.
+5. No VS Code, abra index.html.
+6. Para visualizar o site, clique com o botão direito em index.html e escolha "Open with Live Server".
+   Se essa opção não aparecer, instale a extensão "Live Server" na aba Extensions do VS Code.
+7. As páginas são:
+   - index.html: cadastro
+   - painel.html: painel do aluno
+   - estudos.html: área de estudos
+8. Aparência e cores: css/style.css
+9. Interações: js/app.js
+10. Logo: assets/logo-studyflow.svg
+
+IMPORTANTE:
+Este é um protótipo front-end. O cadastro de demonstração guarda nome e e-mail no navegador
+usando localStorage; a senha não é armazenada. Isso NÃO é autenticação real nem seguro para
+uso público. Para lançar a plataforma, será necessário implementar backend, banco de dados,
+autenticação segura e os conteúdos reais (vídeos, PDFs e exercícios).
+
+Para trocar as cores, procure no início de css/style.css:
+--blue, --blue-dark, --yellow e --yellow-soft.

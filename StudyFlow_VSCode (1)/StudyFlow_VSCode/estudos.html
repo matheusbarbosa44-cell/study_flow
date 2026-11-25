@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyFlow | Área de estudos</title>
+  <link rel="icon" href="assets/logo-studyflow.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body data-page="estudos">
+  <header class="topbar app-topbar">
+    <a class="brand" href="index.html">
+      <img src="assets/logo-studyflow.svg" alt="" class="brand-icon">
+      <span>Study<span class="brand-yellow">Flow</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="painel.html">Painel do aluno</a>
+      <a class="active" href="estudos.html">Área de estudos</a>
+    </nav>
+    <div class="user-area"><span class="user-avatar" id="avatar-initial">A</span><span id="header-user">Aluno</span><a class="logout-link" href="index.html" id="logout">Sair</a></div>
+  </header>
+
+  <main class="page-container">
+    <section class="study-banner">
+      <span class="eyebrow light">APRENDA NO SEU RITMO</span>
+      <h1>Área de estudos</h1>
+      <p>Escolha uma disciplina e encontre conteúdos para continuar evoluindo.</p>
+    </section>
+
+    <section class="study-layout" id="materias">
+      <div class="content-card disciplines-card">
+        <div class="card-heading"><div><span class="mini-label">15 DISCIPLINAS</span><h2>Minhas matérias</h2></div></div>
+        <label class="search-label" for="subject-search">Buscar disciplina</label>
+        <input id="subject-search" type="search" placeholder="Ex.: Matemática, História...">
+        <div class="subject-grid" id="subject-grid">
+          <button class="subject-button selected" data-subject="Matemática">＋ <span>Matemática</span></button>
+          <button class="subject-button" data-subject="Português">Aa <span>Português</span></button>
+          <button class="subject-button" data-subject="Redação">✎ <span>Redação</span></button>
+          <button class="subject-button" data-subject="Literatura">▤ <span>Literatura</span></button>
+          <button class="subject-button" data-subject="História">◷ <span>História</span></button>
+          <button class="subject-button" data-subject="Geografia">◎ <span>Geografia</span></button>
+          <button class="subject-button" data-subject="Filosofia">◇ <span>Filosofia</span></button>
+          <button class="subject-button" data-subject="Sociologia">◉ <span>Sociologia</span></button>
+          <button class="subject-button" data-subject="Biologia">♧ <span>Biologia</span></button>
+          <button class="subject-button" data-subject="Química">⚗ <span>Química</span></button>
+          <button class="subject-button" data-subject="Física">⌁ <span>Física</span></button>
+          <button class="subject-button" data-subject="Inglês">EN <span>Inglês</span></button>
+          <button class="subject-button" data-subject="Espanhol">ES <span>Espanhol</span></button>
+          <button class="subject-button" data-subject="Artes">✧ <span>Artes</span></button>
+          <button class="subject-button" data-subject="Educação Física">⚑ <span>Educação Física</span></button>
+        </div>
+      </div>
+
+      <aside class="content-card selected-subject-card">
+        <span class="mini-label">DISCIPLINA SELECIONADA</span>
+        <h2 id="selected-subject-title">Matemática</h2>
+        <p class="muted">Escolha o tipo de conteúdo que deseja acessar.</p>
+        <div class="resource-list" id="materiais">
+          <article class="resource-item"><span class="resource-icon">▶</span><div><strong>Videoaulas</strong><small>Aulas e explicações em vídeo</small></div><span class="resource-arrow">→</span></article>
+          <article class="resource-item"><span class="resource-icon">▤</span><div><strong>Materiais em PDF</strong><small>Resumos e materiais de apoio</small></div><span class="resource-arrow">→</span></article>
+          <article class="resource-item"><span class="resource-icon">✓</span><div><strong>Exercícios</strong><small>Pratique seus conhecimentos</small></div><span class="resource-arrow">→</span></article>
+        </div>
+        <p class="resource-note">Os conteúdos específicos poderão ser adicionados durante o desenvolvimento da plataforma.</p>
+      </aside>
+    </section>
+  </main>
+  <footer class="footer"><span>StudyFlow</span> · Estudo que flui naturalmente.</footer>
+</body>
+</html>

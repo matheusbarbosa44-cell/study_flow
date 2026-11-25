@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StudyFlow — estudo que flui naturalmente. Organize sua rotina e acompanhe sua evolução.">
+  <title>StudyFlow | Criar conta</title>
+  <link rel="icon" href="assets/logo-studyflow.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body data-page="cadastro">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="StudyFlow - início">
+      <img src="assets/logo-studyflow.svg" alt="" class="brand-icon">
+      <span>Study<span class="brand-yellow">Flow</span></span>
+    </a>
+    <span class="topbar-note">SUA JORNADA DE APRENDIZAGEM</span>
+  </header>
+
+  <main class="auth-layout">
+    <section class="auth-intro">
+      <span class="eyebrow">BEM-VINDO(A) AO STUDYFLOW</span>
+      <h1>Seu aprendizado começa <span>aqui.</span></h1>
+      <p>Organize sua rotina, encontre conteúdos e acompanhe sua evolução em um só lugar.</p>
+      <div class="intro-art" aria-hidden="true">
+        <div class="art-circle"><span>✦</span></div>
+        <div class="art-card">
+          <span class="art-cap">🎓</span>
+          <strong>Aprenda no seu ritmo.</strong>
+          <small>Um passo de cada vez.</small>
+        </div>
+      </div>
+      <div class="intro-points">
+        <span>✓ Videoaulas e materiais</span>
+        <span>✓ Exercícios e organização</span>
+        <span>✓ Acompanhamento dos estudos</span>
+      </div>
+    </section>
+
+    <section class="form-card">
+      <div class="form-heading">
+        <span class="mini-label">COMECE AGORA</span>
+        <h2>Crie sua conta</h2>
+        <p>Preencha seus dados para acessar sua área de estudos.</p>
+      </div>
+      <form id="register-form">
+        <label for="name">Nome completo</label>
+        <input id="name" name="name" type="text" placeholder="Digite seu nome" autocomplete="name" required>
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" placeholder="seuemail@exemplo.com" autocomplete="email" required>
+
+        <label for="password">Senha</label>
+        <div class="password-wrap">
+          <input id="password" name="password" type="password" placeholder="Crie uma senha (mínimo 6 caracteres)" minlength="6" autocomplete="new-password" required>
+          <button class="password-toggle" type="button" id="toggle-password" aria-label="Mostrar senha">Mostrar</button>
+        </div>
+
+        <button class="btn btn-yellow btn-full" type="submit">Criar conta <span>→</span></button>
+        <p class="form-message" id="register-message" role="status"></p>
+      </form>
+      <div class="form-foot">Já tem um cadastro neste navegador? <a href="painel.html">Acessar painel</a></div>
+      <p class="privacy-note">Protótipo inicial: os dados ficam salvos apenas neste navegador. Para contas reais e seguras, será necessário conectar um backend.</p>
+    </section>
+  </main>
+
+  <footer class="footer"><span>StudyFlow</span> · Estudo que flui naturalmente.</footer>
+</body>
+</html>
